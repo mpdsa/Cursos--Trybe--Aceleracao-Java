@@ -75,7 +75,7 @@ public class GerenciamentoVotacao {
     }
     
     
-    System.out.println("Total votos: " + totalVotos);
+    System.out.println("Total de votos: " + totalVotos);
     
   }
   
