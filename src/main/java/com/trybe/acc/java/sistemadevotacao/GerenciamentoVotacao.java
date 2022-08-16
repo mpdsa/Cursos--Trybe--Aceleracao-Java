@@ -68,10 +68,15 @@ public class GerenciamentoVotacao {
     }
     
     for (PessoaCandidata candidato : pessoasCandidatas) {
-      // inserir o calculo geral
       double calculo = calcularPorcentagemVotos(candidato.getVotos());
-      System.out.println(calculo); 
-      System.out.println("Nome: ");
+      
+      StringBuilder resultado = new StringBuilder()
+          .append("Nome: " + candidato.getNome())
+          .append(" - ")
+          .append(candidato.getVotos() + " votos ")
+          .append("(" + calculo + "%" + ")");
+      
+      System.out.println(resultado);
     }
     
     
