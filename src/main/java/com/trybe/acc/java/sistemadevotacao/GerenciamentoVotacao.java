@@ -75,12 +75,12 @@ public class GerenciamentoVotacao {
     }
     
     
-    System.out.println("Total votos" + totalVotos);
+    System.out.println("Total votos: " + totalVotos);
     
   }
   
   private double calcularPorcentagemVotos(int votos) {
-    return votos / totalVotos;
+    return (votos * 100) / totalVotos;
   }
 
 }
